@@ -1,0 +1,26 @@
+{
+  "name": "projet",
+  "version": "1.0.0",
+  "description": "",
+  "main": "server.js",
+  "scripts": {
+    "start": "nodemon server.js",
+    "front-dev": "webpack-react dev",
+    "front-build": "webpack-react build"
+  },
+  "author": "",
+  "license": "ISC",
+  "dependencies": {
+    "@maxencemottard/webpack-react": "^0.2.7",
+    "cors": "^2.8.5",
+    "express": "^4.16.4",
+    "moment": "^2.24.0",
+    "mongoose": "^5.5.8",
+    "nodemon": "^1.19.0",
+    "pug": "^2.0.3",
+    "socket.io": "^2.2.0",
+    "socket.io-client": "^2.2.0",
+    "uuid": "^3.3.2",
+    "ws": "^7.0.0"
+  }
+}
