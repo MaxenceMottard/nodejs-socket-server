@@ -5,7 +5,7 @@ const http = require('http').Server(app)
 const io = require('socket.io')(http)
 const cors = require('cors')
 const fs = require('fs')
-
+const dotenv = require('dotenv').config()
 
 app.use(cors())
 
@@ -84,7 +84,9 @@ io.on('connection', (socket) => {
 })
 
 module.exports = () => {
-    http.listen(8000, () => {
+    const PORT = process.env.PORT || 8000
+
+    http.listen(PORT, () => {
         console.log('Express & Socket.io servers are now starting')
     })
 }
