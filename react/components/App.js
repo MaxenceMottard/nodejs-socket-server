@@ -9,7 +9,7 @@ class App extends React.Component {
 
         this.state = {
             conversationId: null,
-            socket: io.connect('http://localhost:8000')
+            socket: io.connect('https://node-js-ynov.herokuapp.com/')
         }
 
         this.state.socket.emit('admin')
